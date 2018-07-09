@@ -1,0 +1,228 @@
+
+/******************************************************************
+Site Name: Drawing on Math
+Author: Michelle Keyo
+Stylesheet: Main Styles
+
+******************************************************************/
+
+@import "bootstrap";
+@import "typography";
+
+
+/******************************************************************
+COLOR VARIABLES
+******************************************************************/
+
+$black: #000000;
+$white: #ffffff;
+$ltgray: #aaaaaa;
+$gray: #3e3e3e;
+$blue: #5e8dea;
+$green: #5cbd68;
+
+
+
+/*******************************************************************
+GENERAL STYLES
+******************************************************************/
+
+body {
+  font-family: 'Source Sans Pro', verdana, sans-serif; 
+  margin-top:0px;
+  font-size: 17px;
+  line-height: 24px;
+  height: auto;
+  color: $black;
+}
+
+h1 {
+  font-family: 'Rubik Mono One', Arial, Verdana, sans-serif; 
+  font-size: 3em;
+}
+h2, h3 {
+  font-family: 'Source Sans Pro', Arial, Verdana, sans-serif; 
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 30px 0;
+}
+
+
+a {
+  color: #86ac93;
+}
+
+a:hover, a:focus {
+  color: $black;
+  text-decoration: none;
+}
+
+img {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .padleft {
+    margin: 0 0 20px 20px;
+    
+  }
+}
+
+ul > li, ol > li {
+  margin-bottom: 20px;
+}
+
+.border {
+  border: 1px solid $gray;
+}
+
+/*******************************************************************
+HEADER STYLES
+******************************************************************/
+
+header {
+
+  h1 {
+      position: absolute;
+      top: 10px; 
+      text-align: center;
+  }
+
+  a {
+    color: $black;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+
+    h1 {
+        top: 50px; 
+        text-align: left;
+    }
+  }
+}
+
+/*******************************************************************
+NAVBAR STYLES
+******************************************************************/
+
+.navbar-nav {
+  li > a {
+    color: $black;
+    font-family: 'Rubik Mono One', Arial, Verdana, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    &:hover {
+      background-color: $white;
+      color: $ltgray;
+    }
+  }
+
+}
+
+.navbar-toggle {
+  display: block;
+  margin: 0 auto;
+  float: none;
+
+  .icon-bar {
+    background: $black;
+    height: 4px;
+    width: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .navbar-nav {
+    a.first {
+      padding-left: 0;
+    }
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-collapse {
+    padding: 0;
+  }
+}
+
+/*******************************************************************
+OTHER STYLES
+******************************************************************/
+
+.wrapper {
+  hr {
+    margin: 40px 0 10px 0;
+    border-color: $gray;
+    clear: both;
+  }
+  blockquote {
+    border: 0;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 40px;
+    font-style: italic;
+    font-size: 1.45em;
+    line-height: 1.5em;
+  }
+  .attribute {
+    text-align: center;
+    font-style: italic;
+  }
+}
+ul {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: auto;
+  }
+  #DOMModal .modal-dialog {
+    width: 600px !important;
+  }
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+
+
+.ekko-lightbox-nav-overlay a span {
+  color: $black;
+}
+.ekko-lightbox-nav-overlay {
+  margin: -20px 0 0 0;
+}
+
+.modal-header .close {
+  float: right;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 0px;
+  }
+
+}
+
