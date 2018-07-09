@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Drawing on Math">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Drawing on Math</title>
+
+    <!-- Core CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+    <!--Google Analytics Code-->
+    <!--Google Analytics Code-->    
+  </head>
+
+  <body>
+
+     <div class="container">
+    <!--Header-start-->
+    <header>
+
+        <h1>Drawing on Math</h1>
+        <img src="images/header1.jpg" alt="math drawing by student" class="img-responsive">
+
+        <!-- Static navbar -->
+        <nav class="navbar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/clients/drawing/" class="first">Home</a></li>
+              <li><a href="collection.html">Collection</a></li>
+              <li><a href="coding.html">Coding</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="examples.html">Examples</a></li>
+            </ul>
+          </div>
+        </nav>       
+    </header>    
+
+    <div class="wrapper">
+      <!-- content row -->
+
+      <h2>What does learning math look like through the eyes of your students?</h2>   
+      <h3>In our era of large-scale assessments and top-down teacher evaluation models, how and when can educators truly be reflective about their teaching and classroom practices?</h3>
+
+      <p>Drawing on Math is a unique project that encourages and assists educators in using student voice and perspective through classroom drawings to be more reflective towards their teaching and classroom practices. Over decades of educational research, we have found that classroom drawings can be a unique research tool to provide better perspectives and understanding of how students view themselves, their teacher and classroom, and their own learning.</p>
+
+      <p>This website provides teachers and schools with resources for collecting, analyzing, and using your students classroom drawings as a simple reflective and research tool.</p> 
+
+      <div class="row">
+        <div class="col-sm-4">            
+            <a href="images/drawing1.jpg" data-toggle="lightbox" data-gallery="example-gallery"  data-title=" ">
+                <img src="images/drawing1_sm.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="col-sm-4">            
+            <a href="images/drawing2.jpg" data-toggle="lightbox" data-gallery="example-gallery"  data-title=" ">
+                <img src="images/drawing2_sm.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="col-sm-4">            
+            <a href="images/drawing3.jpg" data-toggle="lightbox" data-gallery="example-gallery"  data-title=" ">
+                <img src="images/drawing3_sm.jpg" class="img-responsive">
+            </a>
+        </div>        
+      </div>      
+      <p>&nbsp;</p>
+      <p>Developed through a year-long partnership between educational researchers and the MAISD Regional Mathematics and Science Center, it is our hope these tools and resources will be of valuable for any teachers desiring greater student input and perspective in how student view their learning.</p> 
+
+
+      <blockquote>“The current popularity of ‘reflective practice’ as a touchstone for teacher excellence suggests that, in the minds of many, the disposition toward reflection is central to expert teaching.”</blockquote>
+
+      <p class="attribute">&mdash;<a href="#" data-toggle="modal" data-target="#DOMModal">Robert Sternberg & Joseph Horvath</a></p>
+      
+      <!-- Modal -->
+      <div id="DOMModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Reference</h4>
+            </div>
+            <div class="modal-body">
+              <p>Sternberg, R. J & Horvath, J. A. (1995). A prototype view of expert teaching. Educational Researcher (24:6), pp. 9-17.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr>
+      <p class="pull-right">Muskegon Area Intermediate School District (MAISD)</p>
+
+
+    </div> <!-- wrapper end -->
+   </div><!-- end container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.min.js"></script>
+    <script type="text/javascript">
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+    </script>
+</body>
+</html>
